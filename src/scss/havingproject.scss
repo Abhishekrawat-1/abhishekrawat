@@ -1,0 +1,215 @@
+@import './fontmixin.scss';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.having_project{
+    width: 100%;
+    margin-top: 2.5rem;
+    height: max-content;
+    position: relative;
+//    background-color: #BAB86C;
+background-color: #655d72;
+background-image: linear-gradient(147deg, #655d72 0%, #898196 74%);
+
+    .text_conainer{
+        width: 100%;
+        display: inline-block;
+        vertical-align: middle;
+       
+        
+        h1{
+            font-size: 2.5rem;
+            font-weight: 300;
+            text-align: center;
+            @include  font;
+            color: white;
+            padding: 0.7rem;
+        }
+        p{
+            font-size: 1.5rem;
+            font-weight: 300;
+            @include  font;
+            color: white;
+        }
+
+        button{
+            margin: 0.5rem 0;
+            font-size: 1.2rem;
+            font-weight: 300;
+            border-radius: 10px;
+            padding: 0.5rem 1rem;
+            @include  font;
+            color: white;
+            background-color: transparent;
+            border: 1px solid white;
+            cursor: pointer;
+        }
+    }
+
+    .profile_pics{
+        // width: 50%;
+        display: inline-block;
+        vertical-align: middle;
+        position: absolute;
+        right: 8%;
+        top: -33%;
+        img{
+            width: 39%;
+        }
+    }
+}
+
+/* ?..............................css for mobile devices..................................................................... */
+
+
+/*  TODO:-...css for small screen size 360px............................ */
+
+@media screen and (min-width: 320px) and (max-width: 479px){
+
+    .having_project{
+        .text_conainer{
+
+            h1{
+                font-size: 1.2rem;
+            }
+
+            p{
+                font-size: 1rem;
+            }
+
+            button{
+                font-size: 1rem;
+            }
+
+        }
+
+        .profile_pics{
+            // width: 50%;
+            display: none
+            ;
+            position:static;
+            // right: 8%;
+            // top: -33%;
+            img{
+                width: 30%;
+            }
+        }
+    }
+}
+
+
+/* TODO:-................. css for mobile screen 480 px........................... */
+
+@media screen and  (min-width: 480px) and (max-width: 785px) {
+
+    .having_project{
+        .text_conainer{
+
+            h1{
+                font-size: 1.2rem;
+            }
+
+            p{
+                font-size: 1rem;
+            }
+
+            button{
+                font-size: 1rem;
+            }
+
+        }
+
+        .profile_pics{
+            // width: 50%;
+            display: none;
+            position:static;
+            // right: 8%;
+            // top: -33%;
+            img{
+                width: 30%;
+            }
+        }
+    }
+
+}
+
+
+
+/* TODO:_............. css for tab 786 screen size................... */
+
+@media screen and (min-width: 786px) and (max-width: 990px) {
+    .having_project{
+        .text_conainer{
+
+            h1{
+                font-size: 1.5rem;
+            }
+
+            p{
+                font-size: 1.5rem;
+            }
+
+            button{
+                font-size: 1rem;
+            }
+
+        }
+
+        .profile_pics{
+            // width: 50%;
+            display: none;
+            position:static;
+            // right: 8%;
+            // top: -33%;
+            img{
+                width: 30%;
+            }
+        }
+    }
+
+}
+
+
+/*  TODO:_css for 991 px mobile screen... */
+@media screen and (min-width: 991px) and (max-width: 1123px){
+    .having_project{
+        .text_conainer{
+
+            h1{
+                font-size: 1.5rem;
+            }
+
+            p{
+                font-size: 1.5rem;
+            }
+
+            button{
+                font-size: 1rem;
+            }
+
+        }
+
+        .profile_pics{
+            display: inline-block;
+            vertical-align: middle;
+            position: absolute;
+            right: 5%;
+            top: -20%;
+            img{
+                width: 30%;
+            }
+        }
+    }
+
+}
+
+
+/*  TODO:-..............css for big screen............................. */
+@media screen and (min-width: 1024px) {
+ 
+
+}

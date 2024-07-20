@@ -1,0 +1,109 @@
+
+@import './fontmixin.scss';
+.blog_container{
+    width: 100%;
+    margin: 1rem auto;
+    padding: 0.5rem;
+    background-color: white;
+
+    h1{
+        text-align: center;
+        @include font;
+        font-size: 1.5rem;
+        font-weight: bolder;
+    }
+    .blogPage_container{
+        width: 95%;
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        // grid-template-rows: 1fr 1fr;
+        gap: 1rem;
+        margin: 1rem auto;
+        cursor: pointer;
+        a{
+            text-decoration: none;
+            color: black;
+            
+        }
+    }
+}
+
+/* ?..............................css for mobile devices..................................................................... */
+
+
+/*  TODO:-...css for small screen size 360px............................ */
+
+@media screen and (min-width: 320px) and (max-width: 479px){
+    .blog_container{
+        h1{
+            font-size: 1rem;
+        }
+        .blogPage_container{
+            width: 95%;
+            display:grid;
+            grid-template-columns: 1fr;
+            margin: 1rem auto;
+        }
+    }
+
+}
+
+
+/* TODO:-................. css for mobile screen 480 px........................... */
+
+@media screen and  (min-width: 480px) and (max-width: 785px) {
+
+    .blog_container{
+        h1{
+            font-size: 1rem;
+        }
+        .blogPage_container{
+            width: 95%;
+            display:grid;
+            grid-template-columns: 1fr;
+            margin: 1rem auto;
+        }
+    }
+
+}
+
+
+
+/* TODO:_............. css for tab 786 screen size................... */
+
+@media screen and (min-width: 786px) and (max-width: 990px) {
+    .blog_container{
+        h1{
+            font-size: 1rem;
+        }
+        .blogPage_container{
+            width: 95%;
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            margin: 1rem auto;
+        }
+    }
+}
+
+
+/*  TODO:_css for 991 px mobile screen... */
+@media screen and (min-width: 991px) and (max-width: 1265px){
+    .blog_container{
+        h1{
+            font-size: 1rem;
+        }
+        .blogPage_container{
+            width: 95%;
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            margin: 1rem auto;
+        }
+    }
+}
+
+
+/*  TODO:-..............css for big screen............................. */
+@media screen and (min-width: 1024px) {
+ 
+
+}

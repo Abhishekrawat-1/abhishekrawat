@@ -1,0 +1,53 @@
+.createposts {
+    .items_container {
+        width: 95%;
+        background-color: white;
+        margin: 0 auto;
+        h1{
+            text-align: center;
+            font-size: 1.5rem;
+            margin: 1rem;
+        }
+        .create_form {
+            width: 100%;
+            // background-color: red;
+            .submitbtn {
+                display: block;
+                float : right;
+            margin-right: 2rem;
+            width: 10%;
+            height: 1.5rem;
+            }
+            .input_container{
+                width: 100%;
+                #title {
+                
+                    display: block;
+                    margin: 1rem auto;
+                    width: 60%;
+                    padding: 0.5rem;
+                   
+                }
+                #imageInput {
+                    display: block;
+                    margin: 1rem auto;
+                    width: 60%;
+                    padding: 0.5rem;
+                }
+        
+                #description{
+                    display: block;
+                    margin: 1rem auto;
+                    width: 60%;
+                    padding: 0.5rem;
+                }
+        
+                .editor{
+                    height: 100vh;
+                }
+            }
+           
+        }
+       
+    }
+}

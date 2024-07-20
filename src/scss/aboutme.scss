@@ -1,0 +1,390 @@
+@import './fontmixin.scss';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.aboutme_container{
+    width: 95%;
+    background-color: white;
+    margin: 2rem auto;
+    border-radius: 10px;
+    .aboutme_profile{
+        display: inline-block;
+        vertical-align: middle;
+        width: 30%;
+        // height: 30rem;
+        margin: 1rem;
+        background-color: #b3cdd1;
+        background-image: linear-gradient(315deg, #b3cdd1 0%, #9fa4c4 74%);
+        
+        
+// background-image: linear-gradient(147deg, #a399b2 0%, #4d4855 74%);
+
+        img{
+            width: 90%;
+            height: 70vh;
+           
+        }
+    }
+
+    .aboutme_text{
+        display: inline-block;
+        vertical-align: top;
+        padding: 30px;
+        width: 50%;
+        // height: 10rem;
+        text-align: left;
+        @include font;
+h6{
+    font-size: 1rem;
+    margin: 0.8rem;
+    color: gray;
+    @include font;
+    padding: 0.5rem;
+}
+
+h1{
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+    @include font;
+    // padding: 1rem;
+}
+p{
+    font-size: 1.3rem;
+    line-height: 0.5rem;
+    padding: 1rem;
+    @include font;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    li{
+        line-height: 1.9rem;
+        font-size: 1.3rem;
+        color: #999999;
+        font-weight: bold;
+        font-family: Poppins, Arial, sans-serif;
+        letter-spacing: normal;
+        @include font;
+        padding: 0.3rem;
+
+.about_heading{
+     color: black;
+     margin-right: 2rem;
+}
+   .about_value{
+    text-align: start;
+    letter-spacing: normal;
+   }     
+    }
+}
+
+// h2{
+//     display: block;
+//     line-height: 2rem;
+//     font-size: 1.3rem;
+//     color: #999999;
+//     font-weight: bold;
+//     font-family: Poppins, Arial, sans-serif;
+//     letter-spacing: normal;
+//     @include font;
+//     padding: 0.3rem;
+
+
+//     span{
+//         font-weight: bold;
+//         color: black;
+//         font-size: 1.3rem;
+//         margin-right: 2rem;
+//         text-align: left;
+//         @include font;
+//         padding: 0.5rem;
+//     }
+// }
+    }
+    .hob_container{
+        display:flex;
+        label{
+            display: inline-block;
+            margin-right: 3rem;
+            @include font;
+        }
+        
+    }
+}
+
+
+/* ?..............................css for mobile devices..................................................................... */
+
+
+/*  TODO:-...css for small screen size 360px............................ */
+
+@media screen and (min-width: 320px) and (max-width: 479px){
+.aboutme_container{
+    .aboutme_profile{
+        display: none;
+    }
+
+    .aboutme_text{
+        width: 100%;
+        padding: 0.5rem;
+        // text-align: center;
+        h6{
+            font-size: 0.9rem;
+        }
+        h1{
+            font-size: 1.2rem;
+        }
+
+        p{
+            font-size: 1rem;
+        }
+
+        ul{
+            li{
+                font-size: 1.1rem;
+                line-height: 1.2rem;
+                .about_heading{
+                    color: black;
+                    margin-right: 0.5rem;
+               }
+                  .about_value{
+                   text-align: start;
+                   letter-spacing: normal;
+                  }     
+            }
+        }
+
+    }
+}
+
+}
+
+
+/* TODO:-................. css for mobile screen 480 px........................... */
+
+@media screen and  (min-width: 480px) and (max-width: 785px) {
+
+    .aboutme_container{
+        .aboutme_profile{
+            display: none;
+           
+        }
+    
+        .aboutme_text{
+            width: 100%;
+            padding: 0.5rem;
+            // text-align: center;
+            h6{
+                font-size: 0.9rem;
+            }
+            h1{
+                font-size: 1.2rem;
+            }
+    
+            p{
+                font-size: 1rem;
+            }
+    
+            ul{
+                li{
+                    font-size: 1.2rem;
+                    line-height: 1.2rem;
+                    .about_heading{
+                        color: black;
+                        margin-right: 0.5rem;
+                   }
+                      .about_value{
+                       text-align: start;
+                       letter-spacing: normal;
+                      }     
+                }
+            }
+    
+        }
+    }
+    
+
+}
+
+
+
+/* TODO:_............. css for tab 786 screen size................... */
+
+@media screen and (min-width: 786px) and (max-width: 990px) {
+
+    .aboutme_container{
+        .aboutme_profile{
+            display: inline-block;
+            vertical-align: middle;
+            width: 25%;
+            // height: 30rem;
+            margin: 1rem;
+            background-color: #b3cdd1;
+            background-image: linear-gradient(315deg, #b3cdd1 0%, #9fa4c4 74%);
+            
+            
+    // background-image: linear-gradient(147deg, #a399b2 0%, #4d4855 74%);
+    
+            img{
+                width: 90%;
+                height: 30vh;
+               
+            }
+        }
+    
+        .aboutme_text{
+            width: 70%;
+            padding: 0.5rem;
+            // text-align: center;
+            h6{
+                font-size: 1rem;
+            }
+            h1{
+                font-size: 1.5rem;
+            }
+    
+            p{
+                font-size: 1.2rem;
+            }
+    
+            ul{
+                li{
+                    font-size: 1.2rem;
+                    line-height: 1.2rem;
+                    .about_heading{
+                        color: black;
+                        margin-right: 0.5rem;
+                   }
+                      .about_value{
+                       text-align: start;
+                       letter-spacing: normal;
+                      }     
+                }
+            }
+    
+        }
+    }
+    
+
+}
+
+
+/*  TODO:_css for 991 px mobile screen... */
+// @media screen and (min-width: 991px) and (max-width: 1023px){
+
+//     .aboutme_container{
+//         .aboutme_profile{
+//             display: inline-block;
+//             vertical-align: middle;
+//             width: 25%;
+//             // height: 30rem;
+//             margin: 1rem;
+//             background-color: #b3cdd1;
+//             background-image: linear-gradient(315deg, #b3cdd1 0%, #9fa4c4 74%);
+            
+            
+//     // background-image: linear-gradient(147deg, #a399b2 0%, #4d4855 74%);
+    
+//             img{
+//                 width: 90%;
+//                 height: 30vh;
+               
+//             }
+//         }
+//         .aboutme_text{
+//             width: 100%;
+//             padding: 0.5rem;
+//             // text-align: center;
+//             h6{
+//                 font-size: 0.9rem;
+//             }
+//             h1{
+//                 font-size: 1.2rem;
+//             }
+    
+//             p{
+//                 font-size: 1rem;
+//             }
+    
+//             ul{
+//                 li{
+//                     font-size: 1.2rem;
+//                     line-height: 1.2rem;
+//                     .about_heading{
+//                         color: black;
+//                         margin-right: 0.5rem;
+//                    }
+//                       .about_value{
+//                        text-align: start;
+//                        letter-spacing: normal;
+//                       }     
+//                 }
+//             }
+    
+//         }
+//     }
+    
+
+// }
+
+
+// /*  TODO:-..............css for big screen............................. */
+// @media screen and (min-width: 1024px) {
+ 
+//     .aboutme_container{
+//         .aboutme_profile{
+//             display: inline-block;
+//             vertical-align: middle;
+//             width: 25%;
+//             // height: 30rem;
+//             margin: 1rem;
+//             background-color: #b3cdd1;
+//             background-image: linear-gradient(315deg, #b3cdd1 0%, #9fa4c4 74%);
+            
+            
+//     // background-image: linear-gradient(147deg, #a399b2 0%, #4d4855 74%);
+    
+//             img{
+//                 width: 90%;
+//                 height: 30vh;
+               
+//             }
+//         }
+//         .aboutme_text{
+//             width: 70%;
+//             padding: 0.5rem;
+//             // text-align: center;
+//             h6{
+//                 font-size: 0.9rem;
+//             }
+//             h1{
+//                 font-size: 1.2rem;
+//             }
+    
+//             p{
+//                 font-size: 1rem;
+//             }
+    
+//             ul{
+//                 li{
+//                     font-size: 1.2rem;
+//                     line-height: 1.2rem;
+//                     .about_heading{
+//                         color: black;
+//                         margin-right: 0.5rem;
+//                    }
+//                       .about_value{
+//                        text-align: start;
+//                        letter-spacing: normal;
+//                       }     
+//                 }
+//             }
+    
+//         }
+//     }
+// }

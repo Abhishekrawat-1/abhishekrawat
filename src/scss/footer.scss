@@ -1,0 +1,134 @@
+@import './fontmixin.scss';
+
+.footer_container{
+    width: 100%;
+    background-color: #232931;
+    display: grid;
+    // margin: 1rem;
+    padding: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    .footer_column{
+        display: inline-block;
+        margin: 1rem;
+        vertical-align: top;
+        text-align: start;
+        color: white;
+
+        h1{
+            @include font;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        ul{
+            list-style-type: none;
+            padding: 0;
+            li{
+                margin: 0.5rem 0;
+                @include font;
+                cursor: pointer;
+
+            }
+        }
+   
+    }
+    .footer_copyright{
+        width: 100%;
+        padding: 0.5rem;
+        text-align: center;
+        grid-column: 1/-1;
+        // background-color: rgb(243, 178, 189);
+        p{
+            @include font;
+            color: white;
+            margin: 0 auto;
+        }
+       
+    }
+
+}
+
+/* ?..............................css for mobile devices..................................................................... */
+
+
+/*  TODO:-...css for small screen size 360px............................ */
+
+@media screen and (min-width: 320px) and (max-width: 479px){
+    .footer_container{
+        width: 100%;
+        background-color: #232931;
+        display: grid;
+        // margin: 1rem;
+        padding: 1rem;
+        grid-template-columns: 1fr;
+        .footer_column{
+            display: inline-block;
+            margin: 1rem;
+            vertical-align: top;
+            text-align: start;
+            color: white;
+    
+            h1{
+                @include font;
+                font-size: 1.2rem;
+                margin-bottom: 1rem;
+            }
+            ul{
+                list-style-type: none;
+                padding: 0;
+                li{
+                    font-size: 1rem;
+                    margin: 0.5rem 0;
+                    @include font;
+                    cursor: pointer;
+    
+                }
+            }
+       
+        }
+        .footer_copyright{
+            width: 100%;
+            padding: 0.5rem;
+            text-align: center;
+            grid-column: 1/-1;
+            // background-color: rgb(243, 178, 189);
+            p{
+                @include font;
+                color: white;
+                margin: 0 auto;
+            }
+           
+        }
+    
+    }
+
+}
+
+
+/* TODO:-................. css for mobile screen 480 px........................... */
+
+@media screen and  (min-width: 480px) and (max-width: 785px) {
+
+ 
+
+}
+
+
+
+/* TODO:_............. css for tab 786 screen size................... */
+
+@media screen and (min-width: 786px) and (max-width: 990px) {
+
+}
+
+
+/*  TODO:_css for 991 px mobile screen... */
+@media screen and (min-width: 991px) and (max-width: 1023px){
+
+}
+
+
+/*  TODO:-..............css for big screen............................. */
+@media screen and (min-width: 1024px) {
+ 
+
+}

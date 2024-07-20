@@ -1,0 +1,394 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.topcontainer{
+    width: 100%;
+    // height: 15rem;
+    margin: 0 auto;
+    // background-color: #9e8fb2;
+    // background-image: linear-gradient(315deg, #9e8fb2 0%, #a7acd9 74%);
+
+    background-image: linear-gradient(to right top, #141e30, #182539, #1c2c42, #20334b, #243b55);
+    
+    .top_textcontainer{
+        width: 45%;
+        display: inline-block;
+        vertical-align: middle;
+        text-align: start;
+        // background-color: aqua;
+        h4{
+            color: white;
+        }
+
+        h1{
+            color: white;
+            line-height: 2rem;
+            span{
+                color: #ffbd39;
+                font-size: 3rem;
+
+            }
+        }
+
+        h3{
+            color: white;
+        }
+
+        button{
+            height: 2.5rem;
+            
+            padding: 0.5rem 1rem;
+            border: none;
+            background-color: #b1b493;
+            color: black;
+            font-weight: 700;
+            margin-right: 1rem;
+            margin: 1rem;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: rgba(0, 0, 0, 0.09) 0px 24px 36px -11px;
+        }
+
+        .downloadbtn{
+            background-color: transparent;
+            color: #ffbd39;
+            border: #ffbd39 3px solid;
+
+        }
+        .hirebtn{
+            background-color: transparent;
+            color: #ffbd39;
+            border: #ffbd39 3px solid;
+        }
+
+    }
+
+    .profile_imgContainer{
+        display: inline-block;
+        // background-color: blueviolet;
+        vertical-align: middle;
+    }
+}
+
+
+/* ?..............................css for mobile devices..................................................................... */
+
+
+/*  TODO:-...css for small screen size 360px............................ */
+
+@media screen and (min-width: 320px) and (max-width: 565px){
+    .topcontainer{
+        position: relative;
+        overflow: hidden;
+        .top_textcontainer{
+            width: 95%;
+            position: absolute;
+            left: 50%;
+            right: 50%;
+            transform: translate(-35%, -1%);
+            bottom: 0.8rem;
+            h4{
+                width: fit-content;
+                padding: 0.2rem;
+                color: white;
+                // background-color: #141e30;
+                font-size: 0.8rem;
+                text-shadow: 
+                -1px -1px 0 #000,  
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000; 
+            }
+    
+            h1{
+                width: fit-content;
+                color: white;
+                font-size: 1rem;
+                padding: 0.2rem;
+                text-shadow: 
+                -1px -1px 0 #000,  
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000; 
+                // background-color: #141e30;
+                span{
+                    color: #ffbd39;
+                    font-size: 1.3rem;
+    
+                }
+            }
+    
+            h3{
+                padding: 0.2rem;
+                width: fit-content;
+                color: white;
+                font-size: 1rem;
+                text-shadow: 
+                -1px -1px 0 #000,  
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000; 
+                // background-color: #141e30;
+            }
+    
+            button{
+                width: fit-content;
+                height: 2rem;
+                background-color: #141e30;
+                padding: 0.5rem 1rem;
+                border: none;
+                background-color: #b1b493;
+                color: black;
+                font-weight: 700;
+                margin-right: 1rem;
+                margin: 0.5rem;
+                border-radius: 10px;
+                cursor: pointer;
+                box-shadow: rgba(0, 0, 0, 0.09) 0px 24px 36px -11px;
+            }
+    
+            .downloadbtn{
+                background-color: transparent;
+                color: #ffbd39;
+                border: #ffbd39 3px solid;
+    
+            }
+            .hirebtn{
+                background-color: transparent;
+                color: #ffbd39;
+                border: #ffbd39 3px solid;
+            }
+    
+
+        }
+
+        .profile_imgContainer{
+            display: block;
+            // background-color: blueviolet;
+            img{
+                width: 80%;
+            }
+        }
+    }
+
+}
+
+
+/* TODO:-................. css for mobile screen 480 px........................... */
+
+@media screen and  (min-width: 566px) and (max-width: 685px) {
+
+    .topcontainer{
+        position: relative;
+        overflow: hidden;
+        .top_textcontainer{
+            width: 95%;
+            position: absolute;
+            left: 50%;
+            right: 50%;
+            transform: translate(-40%, -20%);
+            bottom: 0.8rem;
+            h4{
+                width: fit-content;
+                padding: 0.2rem;
+                color: white;
+                // background-color: #141e30;
+                font-size: 2rem;
+                text-shadow: 
+                -1px -1px 0 #000,  
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000; 
+            }
+    
+            h1{
+                width: fit-content;
+                color: white;
+                font-size: 2rem;
+                padding: 0.2rem;
+                text-shadow: 
+                -1px -1px 0 #000,  
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000; 
+                // background-color: #141e30;
+                span{
+                    color: #ffbd39;
+                    font-size: 2rem;
+    
+                }
+            }
+    
+            h3{
+                padding: 0.2rem;
+                width: fit-content;
+                color: white;
+                font-size: 2rem;
+                text-shadow: 
+                -1px -1px 0 #000,  
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000; 
+                // background-color: #141e30;
+            }
+    
+            button{
+                width: fit-content;
+                height: 3rem;
+                background-color: #141e30;
+                padding: 0.5rem 1rem;
+                border: none;
+                background-color: #b1b493;
+                color: black;
+                font-weight: 700;
+                margin-right: 1rem;
+                margin: 0.5rem;
+                border-radius: 10px;
+                cursor: pointer;
+                box-shadow: rgba(0, 0, 0, 0.09) 0px 24px 36px -11px;
+            }
+    
+            .downloadbtn{
+                background-color: transparent;
+                color: #ffbd39;
+                border: #ffbd39 3px solid;
+    
+            }
+            .hirebtn{
+                background-color: transparent;
+                color: #ffbd39;
+                border: #ffbd39 3px solid;
+            }
+    
+
+        }
+
+        .profile_imgContainer{
+            display: block;
+            // background-color: blueviolet;
+            img{
+                width: 80%;
+            }
+        }
+    }
+
+}
+
+@media screen and  (min-width: 686px) and (max-width: 990px) {
+
+    .topcontainer{
+        position: relative;
+        overflow: hidden;
+        .top_textcontainer{
+            width: 95%;
+            position: absolute;
+            left: 50%;
+            right: 50%;
+            transform: translate(-35%, -40%);
+            bottom: 0.8rem;
+            h4{
+                width: fit-content;
+                padding: 0.2rem;
+                color: white;
+                // background-color: #141e30;
+                font-size: 2rem;
+                text-shadow: 
+                -1px -1px 0 #000,  
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000; 
+            }
+    
+            h1{
+                width: fit-content;
+                color: white;
+                font-size: 2rem;
+                padding: 0.2rem;
+                text-shadow: 
+                -1px -1px 0 #000,  
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000; 
+                // background-color: #141e30;
+                span{
+                    color: #ffbd39;
+                    font-size: 2rem;
+    
+                }
+            }
+    
+            h3{
+                padding: 0.2rem;
+                width: fit-content;
+                color: white;
+                font-size: 2rem;
+                text-shadow: 
+                -1px -1px 0 #000,  
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000; 
+                // background-color: #141e30;
+            }
+    
+            button{
+                width: fit-content;
+                height: 3rem;
+                background-color: #141e30;
+                padding: 0.5rem 1rem;
+                border: none;
+                background-color: #b1b493;
+                color: black;
+                font-weight: 700;
+                margin-right: 1rem;
+                margin: 0.5rem;
+                border-radius: 10px;
+                cursor: pointer;
+                box-shadow: rgba(0, 0, 0, 0.09) 0px 24px 36px -11px;
+            }
+    
+            .downloadbtn{
+                background-color: transparent;
+                color: #ffbd39;
+                border: #ffbd39 3px solid;
+    
+            }
+            .hirebtn{
+                background-color: transparent;
+                color: #ffbd39;
+                border: #ffbd39 3px solid;
+            }
+    
+
+        }
+
+        .profile_imgContainer{
+            display: block;
+            // background-color: blueviolet;
+            img{
+                width: 80%;
+            }
+        }
+    }
+
+}
+
+
+/* TODO:_............. css for tab 786 screen size................... */
+
+
+
+/*  TODO:_css for 991 px mobile screen... */
+@media screen and (min-width: 991px) and (max-width: 1023px){
+
+}
+
+
+/*  TODO:-..............css for big screen............................. */
+@media screen and (min-width: 1024px) {
+ 
+
+}

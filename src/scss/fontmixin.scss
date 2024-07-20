@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Fresca&display=swap');
+
+@mixin font{
+    font-family: "Fresca", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'Trotes';
+    src: url('../fonts/Trotes.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  // Define a mixin for the custom font
+  @mixin Trotes {
+    font-family: 'Trotes', sans-serif;
+  }

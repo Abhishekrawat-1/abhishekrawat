@@ -1,0 +1,190 @@
+@import './fontmixin.scss';
+.blog_card{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 0.8rem;
+    border: #ffbd39 2px solid;
+    transition: all 0.3s ease;
+
+    &:hover{
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        transform: translateY(-10px);
+    }
+    img{
+        width:95%;
+        height: 13rem;
+    }
+
+    h1{
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        color: #000000;
+        @include font;
+        font-weight: 800;
+    }
+
+    p{
+        margin-top: 0.5rem;
+        font-size: 1rem;
+        color: #000000;
+        @include font;
+        font-weight: 400;
+    }
+
+    h4{
+        margin-top: 0.8rem;
+        font-size: 1rem;
+        color: #000000;
+        @include font;
+    }
+}
+
+/* ?..............................css for mobile devices..................................................................... */
+
+
+/*  TODO:-...css for small screen size 360px............................ */
+
+@media screen and (min-width: 320px) and (max-width: 479px){
+
+    .blog_card{
+        width: 100%;
+        height: fit-content;
+       
+        padding: 0.8rem;
+        img{
+            width:90%;
+            height: 10rem;
+        }
+    
+        h1{
+            margin-top: 1rem;
+            font-size: 1.2rem;
+            color: #000000;
+            @include font;
+            font-weight: 800;
+        }
+    
+        p{
+            margin-top: 0.5rem;
+            font-size: 1rem;
+            color: #000000;
+            @include font;
+            font-weight: 400;
+        }
+    
+        h4{
+            margin-top: 0.8rem;
+            font-size: 1rem;
+            color: #000000;
+            @include font;
+        }
+    }
+    
+}
+
+
+/* TODO:-................. css for mobile screen 480 px........................... */
+
+@media screen and  (min-width: 480px) and (max-width: 550px) {
+
+    .blog_card{
+        width: 100%;
+        height: fit-content;
+       
+        padding: 0.8rem;
+        img{
+            width:90%;
+            height: 10rem;
+        }
+    
+        h1{
+            margin-top: 1rem;
+            font-size: 1.2rem;
+            color: #000000;
+            @include font;
+            font-weight: 800;
+        }
+    
+        p{
+            margin-top: 0.5rem;
+            font-size: 1rem;
+            color: #000000;
+            @include font;
+            font-weight: 400;
+        }
+    
+        h4{
+            margin-top: 0.8rem;
+            font-size: 1rem;
+            color: #000000;
+            @include font;
+        }
+    }
+    
+
+}
+
+
+@media screen and  (min-width: 551x) and (max-width: 785px) {
+
+    .blog_card{
+        width: 100%;
+        height: fit-content;
+       
+        padding: 0.8rem;
+        img{
+            width:90%;
+            height: 10rem;
+        }
+    
+        h1{
+            margin-top: 1rem;
+            font-size: 1.2rem;
+            color: #000000;
+            @include font;
+            font-weight: 800;
+        }
+    
+        p{
+            margin-top: 0.5rem;
+            font-size: 1rem;
+            color: #000000;
+            @include font;
+            font-weight: 400;
+        }
+    
+        h4{
+            margin-top: 0.8rem;
+            font-size: 1rem;
+            color: #000000;
+            @include font;
+        }
+    }
+    
+
+}
+
+
+/* TODO:_............. css for tab 786 screen size................... */
+
+@media screen and (min-width: 786px) and (max-width: 990px) {
+
+    
+
+}
+
+
+/*  TODO:_css for 991 px mobile screen... */
+@media screen and (min-width: 991px) and (max-width: 1023px){
+
+}
+
+
+/*  TODO:-..............css for big screen............................. */
+@media screen and (min-width: 1024px) {
+ 
+
+}

@@ -1,0 +1,281 @@
+.navbar_bgcontainer {
+    width: 100%;
+  }
+  
+  .navcontainer {
+    width: 100%;
+    background-color: inherit;
+
+    .menu{
+        display: none;
+        font-size: 2rem;
+        float: left;
+        margin-left:0.8rem;
+        color: white;
+    }
+  
+    .logo {
+      width: 30%;
+      display: inline-block;
+      vertical-align: middle;
+  
+      img {
+        width: 30%;
+      }
+    }
+  
+    .nav_linkscontainer {
+      width: 50%;
+      display: inline-block;
+      vertical-align: middle;
+      transform: translateX(0%);
+      transition: transform 0.3s ease;
+  
+      .closebtn {
+        float: right;
+        margin-right: 0.8rem;
+        margin-top: 1rem;
+        font-size: 2rem;
+        color: white;
+        display: none;
+      }
+  
+      ul {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+  
+        li {
+          font-weight: bold;
+          color: white;
+          cursor: pointer;
+  
+          &:hover {
+            transition: all 0.3s ease-in-out;
+            color: #40404F;
+            text-decoration: underline;
+            transform: translateY(-3px);
+          }
+        }
+      }
+    }
+  
+    .nav_active {
+      transform: translateX(100%);
+    }
+  }
+
+/* CSS for mobile devices */
+
+/* CSS for small screen size 360px */
+@media screen and (min-width: 320px) and (max-width: 479px) {
+    .navcontainer {
+        .logo img {
+          width: 70%;
+          margin: 0.5rem;
+        }
+
+        .menu{
+            display: block;
+        }
+    
+        .nav_linkscontainer {
+          width: 50%;
+          height: 100vh;
+          position: fixed;
+          top: 0;
+          left: 0;
+          z-index: 1000;
+          transform: translateX(-100%);
+          background-color: #40404F;
+          transition: transform 0.3s ease;
+    
+          .closebtn {
+            display: block;
+          }
+    
+          ul {
+            padding-top: 4rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            list-style: none;
+            background-color: transparent;
+    
+            li {
+                width: 100%;
+              margin: 0.5rem;
+              text-align: left;
+              font-size: 0.8rem;
+              font-weight: bold;
+              color: white;
+              background-color: transparent;
+
+    
+              a {
+                font-size: 1rem;
+                color: white;
+                margin-left: 0.5rem;
+              }
+              a:active {
+                background-color:transparent;
+              }
+            }
+
+            li:active{
+                background-color: transparent;
+            }
+          }
+        }
+    
+        .nav_active {
+          transform: translateX(0%);
+        }
+      }
+    }
+
+/* CSS for mobile screen 480px */
+@media screen and (min-width: 480px) and (max-width: 785px) {
+    .navcontainer {
+        .logo img {
+          width: 70%;
+          margin: 0.5rem;
+        }
+
+        .menu{
+            display: block;
+        }
+    
+        .nav_linkscontainer {
+          width: 50%;
+          height: 100vh;
+          position: fixed;
+          top: 0;
+          left: 0;
+          z-index: 1000;
+          transform: translateX(-100%);
+          background-color: #40404F;
+          transition: transform 0.3s ease;
+    
+          .closebtn {
+            display: block;
+          }
+    
+          ul {
+            padding-top: 4rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            list-style: none;
+            background-color: transparent;
+    
+            li {
+                width: 100%;
+              margin: 0.5rem;
+              text-align: left;
+              font-size: 0.8rem;
+              font-weight: bold;
+              color: white;
+              background-color: transparent;
+
+    
+              a {
+                font-size: 1rem;
+                color: white;
+                margin-left: 0.5rem;
+              }
+              a:active {
+                background-color:transparent;
+              }
+            }
+
+            li:active{
+                background-color: transparent;
+            }
+          }
+        }
+    
+        .nav_active {
+          transform: translateX(0%);
+        }
+      }
+}
+
+/* CSS for tablet screen size 786px */
+@media screen and (min-width: 786px) and (max-width: 990px) {
+
+    .navcontainer {
+        .logo img {
+          width: 70%;
+          margin: 0.5rem;
+        }
+
+        .menu{
+            display: block;
+        }
+    
+        .nav_linkscontainer {
+          width: 50%;
+          height: 100vh;
+          position: fixed;
+          top: 0;
+          left: 0;
+          z-index: 1000;
+          transform: translateX(-100%);
+          background-color: #40404F;
+          transition: transform 0.3s ease;
+    
+          .closebtn {
+            display: block;
+          }
+    
+          ul {
+            padding-top: 4rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            list-style: none;
+            background-color: transparent;
+    
+            li {
+                width: 100%;
+              margin: 0.5rem;
+              text-align: left;
+              font-size: 0.8rem;
+              font-weight: bold;
+              color: white;
+              background-color: transparent;
+
+    
+              a {
+                font-size: 1rem;
+                color: white;
+                margin-left: 0.5rem;
+              }
+              a:active {
+                background-color:transparent;
+              }
+            }
+
+            li:active{
+                background-color: transparent;
+            }
+          }
+        }
+    
+        .nav_active {
+          transform: translateX(0%);
+        }
+      }
+}
+    /* Add your styles for this screen size */
+
+/* CSS for 991px mobile screen */
+@media screen and (min-width: 991px) and (max-width: 1023px) {
+    /* Add your styles for this screen size */
+}
+
+/* CSS for big screens */
+@media screen and (min-width: 1024px) {
+    /* Add your styles for this screen size */
+}

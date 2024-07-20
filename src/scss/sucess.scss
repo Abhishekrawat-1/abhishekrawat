@@ -1,0 +1,27 @@
+@import "../scss/notifymixin.scss";
+
+.sucessBoxbg{
+
+    @include notifybgmixin();
+
+    .sucess_container{
+
+        @include notifycontentmixin(35%, auto, white);
+        color: black;
+
+        .close_icon {
+            float: right;
+            font-size: 1.6rem;
+            cursor: pointer;
+        }
+
+        img{
+            width: 12%;
+            height: 3rem;
+            margin : 0 auto;
+            display: block;
+        }
+
+    }
+
+}

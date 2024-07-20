@@ -1,0 +1,99 @@
+/* src/scss/skills.scss */
+@import './fontmixin.scss';
+.skills-list {
+    width: 95%;
+    background-color: white;
+    border-radius: 10px;
+    // padding: 10px;
+    // max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    h2{
+        text-align: center;
+        margin-bottom: 10px;
+        @include font;
+        font-weight: bolder;
+    }
+    .skills-container{
+        display: flex;
+        justify-content:space-evenly;
+    }
+
+    .left-column,
+  .right-column {
+    width: 40%; /* Adjust the width as needed */
+  }
+
+  
+  }
+  
+  /* ?..............................css for mobile devices..................................................................... */
+
+
+/*  TODO:-...css for small screen size 360px............................ */
+
+@media screen and (min-width: 320px) and (max-width: 479px){
+
+  .skills-list {
+    padding: 0.5rem;
+    h2{
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+    .skills-container{
+      .left-column,
+  .right-column {
+    width: 50%; 
+    margin: 0.5rem;/* Adjust the width as needed */
+  }
+
+    }
+  }
+}
+
+
+/* TODO:-................. css for mobile screen 480 px........................... */
+
+@media screen and  (min-width: 480px) and (max-width: 785px) {
+
+  .skills-list {
+    padding: 0.5rem;
+    h2{
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+    .skills-container{
+      .left-column,
+  .right-column {
+    width: 50%; 
+    margin: 0.5rem;/* Adjust the width as needed */
+  }
+
+    }
+  }
+
+}
+
+
+
+/* TODO:_............. css for tab 786 screen size................... */
+
+@media screen and (min-width: 786px) and (max-width: 990px) {
+
+}
+
+
+/*  TODO:_css for 991 px mobile screen... */
+@media screen and (min-width: 991px) and (max-width: 1023px){
+
+}
+
+
+/*  TODO:-..............css for big screen............................. */
+@media screen and (min-width: 1024px) {
+ 
+
+}
+  
+  
+  
